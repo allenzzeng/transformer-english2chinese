@@ -28,7 +28,8 @@ MAX_LENGTH = 60                     # 语句最大长度
 
 TRAIN_FILE = 'nmt/en-cn/train.txt'  # 训练集
 DEV_FILE = "nmt/en-cn/dev.txt"      # 验证集
-SAVE_FILE = 'save/model.pt'         # 模型保存路径
+SAVE_DIR = 'save'
+SAVE_FILE = os.path.join(SAVE_DIR, 'model.pt')
 #DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 DEVICE = 'cpu'
 
@@ -695,6 +696,8 @@ def train(data, model, criterion, optimizer):
 
         # 如果当前epoch的模型在dev集上的loss优于之前记录的最优loss则保存当前模型，并更新最优loss值
         if dev_loss < best_dev_loss:
+            if not os.path.exists(SAVE_DIR):
+                os.makedirs(SAVE_DIR)
             torch.save(model.state_dict(), SAVE_FILE)
             best_dev_loss = dev_loss
             print('****** Save model done... ******')
