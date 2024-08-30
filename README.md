@@ -17,6 +17,10 @@ git clone https://github.com/xin1347764176/transformer-english2chinese.git
 Create a Conda environment named `trans` and activate it:
 
 ```bash
+conda remove --name trans --all
+```
+
+```bash
 conda create -n trans python=3.9
 ```
 
