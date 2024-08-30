@@ -21,7 +21,7 @@ conda remove --name trans --all
 ```
 
 ```bash
-conda create -n trans python=3.9
+conda create -n trans python=3.8
 ```
 
 ```bash
