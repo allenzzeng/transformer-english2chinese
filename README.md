@@ -9,7 +9,7 @@ This repository contains code for a Transformer model that translates text from 
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/seanzhang-zhichen/-transformer-english2chinese-
+git clone https://github.com/xin1347764176/transformer-english2chinese.git
 ```
 
 ### Create and Activate a Conda Environment
@@ -18,6 +18,9 @@ Create a Conda environment named `trans` and activate it:
 
 ```bash
 conda create -n trans python=3.8
+```
+
+```bash
 conda activate trans
 ```
 
