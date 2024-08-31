@@ -61,5 +61,5 @@ python transformer_nmt.py
 
 ## Additional Information
 
-This project is copied from the work available at: [transformer-english2chinese GitHub](https://github.com/seanzhang-zhichen/-transformer-english2chinese-) [csdn](https://blog.csdn.net/qq_44193969/article/details/116016404).  
+This project is learned from the work available at: [transformer-english2chinese GitHub](https://github.com/seanzhang-zhichen/-transformer-english2chinese-) [csdn](https://blog.csdn.net/qq_44193969/article/details/116016404).  
 
